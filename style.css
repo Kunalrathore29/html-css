@@ -1,0 +1,14 @@
+.navbar{
+    height: 30px;
+    width: 800px;
+    background-color: aqua;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.internal{
+    height: 25px;
+    width: 50px;
+    border: 1.5px solid black;
+}

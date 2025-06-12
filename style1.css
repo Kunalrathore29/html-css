@@ -1,0 +1,13 @@
+/* h1{
+
+    color: blue;
+    background-color: cadetblue;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 10px;
+    height: 100px;
+    width: 200px;
+} */
+ h1{
+    border: 2px double red;
+ }
