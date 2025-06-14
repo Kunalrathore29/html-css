@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Grid Cards</title>
+        <style>
+          body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+  background: #fff;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #999;
+  border-radius: 10px;
+}
+
+.card {
+  border: 2px solid #aaa;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.icon {
+  font-size: 2rem;
+  color: white;
+  background-color: #00aaff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+ .icon img {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.5s ease;
+    }
+
+    .icon:hover img {
+      transform: rotate(360deg);
+    }
+
+
+
+.card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.card h3.blue {
+  color: #00aaff;
+}
+
+.card p {
+  margin-top: 5px;
+  font-size: 0.95rem;
+ color: #333;
+}
+  @enand(max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+   
+  </style>
+    </head>
+    <body>
+         <h2>CSS</h2>
+        <div class="container">
+            <div class="card">
+              <div class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/1008/1008209.png" alt="icon">
+        </div>
+
+            <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta, numquam pariatur. Saepe, asperiores facere.</p>
+            </div>
+            <div class="card">
+                 <div class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="icon">
+        </div>
+                <h3>Whatsapp</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quasi porro deleniti nihil. Nam, quas nostrum.</p>
+            </div>
+            <div class="card">
+                <div class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png" alt="icon">
+        </div>
+                <h3>Instagram</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Unde, maxime!
+                </p>
+            </div>
+            <div class="card">
+                 <div class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828966.png" alt="icon">
+        </div>
+                <h3 class="blue">Telegram</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eveniet, fugit.</p>
+            </div>
+            <div class="card">
+                 <div class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828970.png" alt="icon">
+        </div>
+                <h3>Amazon</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Laborum, accusantium?</p>
+            </div>
+            <div class="card">
+              <div class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828960.png" alt="icon">
+        </div>
+                <h3>Photos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Dignissimos esse dolorum delectus tempora cumque
+                    officiis?</p>
+            </div>
+        </div>
+         
+
+    </body>
+</html>
