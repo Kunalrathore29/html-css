@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 600px;
+    width: 75%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.contact{
+    height: 20%;
+    width: 80%;
+    display: flex;
+    border: 2px solid black;
+    border: 10px;
+}
+.info{
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+.left input{
+    height: 20px;
+}
+image{
+    height: 40%;
+}
+.right textarea{
+    height: 40%;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
